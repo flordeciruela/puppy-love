@@ -1,0 +1,42 @@
+
+.row {
+  margin: 0;
+}
+
+/*Header*/
+header.parallax-container {
+  height: 665px;
+}
+
+.side-nav .divider {
+  margin: 0;
+}
+
+/*Hero*/
+#hero {
+  height: 500px;
+}
+
+/*About*/
+.row .card,
+.row .card-image {
+  margin: 0;
+  padding: 0;
+}
+/*main*/
+#main {
+  background-color: #4B4D89;
+}
+/*form*/
+#form.parallax-container {
+  height: 300px;
+}
+
+footer {
+  height: 200px;
+  justify-content: center;
+}
+
+footer i {
+  margin: auto 15px;
+}
