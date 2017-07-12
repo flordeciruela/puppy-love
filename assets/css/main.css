@@ -3,9 +3,29 @@
   margin: 0;
 }
 
+.parallax-container .center-align {
+	background-color: rgba(6, 6, 6, 0.5);
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	max-width: none;
+}
+
+.button-collapse {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 100;
+}
+
 /*Header*/
 header.parallax-container {
-  height: 665px;
+  height: 300px;
+}
+
+header.parallax-container img {
+	width: 100%;
 }
 
 .side-nav .divider {
@@ -18,18 +38,41 @@ header.parallax-container {
 }
 
 /*About*/
-.row .card,
-.row .card-image {
+.about-row .col {
   margin: 0;
   padding: 0;
 }
+
 /*main*/
 #main {
   background-color: #4B4D89;
 }
 /*form*/
 #form.parallax-container {
-  height: 300px;
+  height: 250px;
+	text-align: center;
+}
+
+#form.parallax-container img {
+  width: 100%;
+}
+
+#form .btn {
+	width: 85%;
+	display: block;
+	margin: 20px auto;
+}
+
+.parallax-container .container {
+	background-color: rgba(6, 6, 6, 0.5);
+	height: 100%;
+	width: 100%;
+	max-width: none;
+}
+
+.btn.transparent {
+	background-color: none;
+	border: 2px solid #ffffff;
 }
 
 footer {
@@ -37,6 +80,54 @@ footer {
   justify-content: center;
 }
 
-footer i {
+footer i.fa {
   margin: auto 15px;
+	font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+	header.parallax-container {
+	  height: 400px;
+	}
+
+	#form.parallax-container {
+	  height: 270px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	header.parallax-container {
+	  height: 665px;
+	}
+
+	.card {
+		height: 316px;
+	}
+
+	.card-stacked,
+	.card-image,
+	img.responsive-img {
+		height: 100%;
+	}
+
+	.hide-on-large-and-up {
+		display: none;
+	}
+
+	#form.parallax-container {
+	  height: 300px;
+		text-align: left;
+	}
+
+	.parallax-container .row {
+		display: flex;
+		align-items: center;
+
+		margin: 5% 15%;
+	}
+
+	#form .btn {
+		margin: 20px 0 20px auto;
+	}
+
 }
